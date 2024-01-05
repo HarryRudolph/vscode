@@ -1,0 +1,79 @@
+{
+  "workbench.sideBar.location": "right",
+  "editor.minimap.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": true,
+  "workbench.startupEditor": "none",
+
+  // FORMATTING
+  "editor.formatOnSave": true,
+  "html.format.unformatted": "p",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "editor.quickSuggestions": {
+    "comments": "off",
+    "strings": "off",
+    "other": "off"
+  },
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.quickSuggestionsDelay": 100,
+  // Controls if quick suggestions should show up while typing
+  // Controls if suggestions should be accepted with "Enter" - in addition to "Tab". Helps to avoid ambiguity between inserting new lines and accepting suggestions.
+  "editor.acceptSuggestionOnEnter": "off",
+  // Enable word based suggestions
+  "editor.wordBasedSuggestions": "off",
+  // Controls if suggestions should automatically show up when typing trigger characters
+  "editor.suggestOnTriggerCharacters": false,
+  "window.zoomLevel": 1,
+  "files.associations":{
+    "*.xml": "xml"
+    },
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "never",
+  "terminal.integrated.allowChords": false,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "vim.handleKeys":{
+    "<C-s>": false,
+    "<C-z>": false,
+    "<C-c>": false,
+    "<C-v>": false,
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "[dockerfile]": {
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "[jsonc]": {
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  }
+}

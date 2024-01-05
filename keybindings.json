@@ -1,0 +1,29 @@
+// Place your key bindings in this file to override the defaults
+[
+    { "key": "ctrl+k",
+    "command": "workbench.action.terminal.focus",
+    },
+    {
+    "key": "ctrl+k",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+    },
+    {
+    "key": "ctrl+f",
+    "command": "-workbench.action.terminal.focusFind",
+    "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+    "key": "ctrl-p",
+    "command": "-workbench.action.quickOpen"
+    },
+    { 
+        "key": "cmd+y", 
+        "command": "workbench.action.terminal.sendSequence",
+        "args": { 
+            "text": "git add .\u000Dgit commit -m \"x\"\u000Dgit push\u000D"
+        },
+        "when": "editorTextFocus && resourceExtname != .ipynb"
+    }
+]
+    

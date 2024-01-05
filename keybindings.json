@@ -22,7 +22,7 @@
     "key": "cmd+y",
     "command": "workbench.action.terminal.sendSequence",
     "args": {
-      "text": "git add .\u000Dgit commit -m \"x\"\u000Dgit push\u000D"
+      "text": "git add .\u000Dgit commit -m \"no meaningful commit message\"\u000Dgit push\u000D"
     },
     "when": "editorTextFocus && resourceExtname != .ipynb"
   }

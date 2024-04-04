@@ -1,11 +1,13 @@
 // Place your key bindings in this file to override the defaults
 [
   {
-    "key": "ctrl+k",
+    // Focus the terminal when the terminal is not focused
+    "key": "ctrl+;",
     "command": "workbench.action.terminal.focus"
   },
   {
-    "key": "ctrl+k",
+    // Focus the active editor group (text editor) when the terminal is focused
+    "key": "ctrl+;",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "terminalFocus"
   },
@@ -19,11 +21,15 @@
     "command": "-workbench.action.quickOpen"
   },
   {
-    "key": "cmd+y",
-    "command": "workbench.action.terminal.sendSequence",
-    "args": {
-      "text": "git add .\u000Dgit commit -m \"no meaningful commit message\"\u000Dgit push\u000D"
-    },
-    "when": "editorTextFocus && resourceExtname != .ipynb"
+    //  "ctrl+h": Focuses on the left editor group when the text editor is focused, Vim extension is active, and Vim is not in Insert mode.
+    "key": "ctrl+h",
+    "command": "workbench.action.focusLeftGroup",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  },
+  {
+    // "ctrl+l": Focuses on the right editor group when the text editor is focused, Vim extension is active, and Vim is not in Insert mode.
+    "key": "ctrl+l",
+    "command": "workbench.action.focusRightGroup",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
   }
 ]

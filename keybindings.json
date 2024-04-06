@@ -31,5 +31,13 @@
     "key": "ctrl+l",
     "command": "workbench.action.focusRightGroup",
     "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+  },
+  {
+    "key": "cmd+y",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "git add .\u000Dgit commit -m \"no meaningful commit message\"\u000Dgit push\u000D"
+    },
+    "when": "editorTextFocus && resourceExtname != .ipynb"
   }
 ]

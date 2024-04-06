@@ -3,16 +3,7 @@
   "vim.useSystemClipboard": true,
 
   // Vim keybindings
-  "vim.leader": "<space>",
   "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["<leader>", "y"],
-      "command": "workbench.action.terminal.sendSequence",
-      "args": {
-        "text": "git add .\u000Dgit commit -m \"no meaningful commit message\"\u000Dgit push\u000D"
-      },
-      "when": "editorTextFocus && resourceExtname != .ipynb"
-    },
     {
       "before": ["g", "x"],
       "commands": ["editor.action.revealDefinition"]

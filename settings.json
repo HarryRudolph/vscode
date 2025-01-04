@@ -93,5 +93,7 @@
   "editor.stickyScroll.enabled": false,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "python.createEnvironment.trigger": "off"
 }

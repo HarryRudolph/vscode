@@ -39,5 +39,15 @@
       "text": "git add .\u000Dgit commit -m \"no meaningful commit message\"\u000Dgit push\u000D"
     },
     "when": "editorTextFocus && resourceExtname != .ipynb"
+  },
+  {
+    "key": "alt+w",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.closeAllEditors",
+        "workbench.files.action.collapseExplorerFolders"
+      ]
+    }
   }
 ]
